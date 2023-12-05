@@ -29,19 +29,19 @@ def get_chatmodel_response(question):
     return None
 
 # Streamlit app setup
-st.set_page_config(page_title="Conversational Q&A Chatbot")
-st.header("Hey, Let's Chat")
+st.set_page_config(page_title="Sisi Chatbot")
+st.header("Hey, I'm Sisi!")
 
 from dotenv import load_dotenv
 load_dotenv()
 import os
 
-# Assuming the existence of the ChatOpenAI class
+# ChatOpenAI class
 chat = ChatOpenAI(temperature=0.5)
 
 if 'flowmessages' not in st.session_state:
     st.session_state['flowmessages'] = [
-        SystemMessage(content="You are a comedian AI assistant")
+        SystemMessage(content="You are an AI Friend, your name is Sisi and you was developed by Sailesh on December 5 2023. You have to be a nice friend and a AI assistant to the users and help them with what information they need. It should be short and sharp")
     ]
 
 # Streamlit UI
