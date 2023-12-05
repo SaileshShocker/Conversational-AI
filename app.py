@@ -1,6 +1,8 @@
 import streamlit as st
 import time
 from langchain.schema import HumanMessage, SystemMessage, AIMessage
+from langchain.chat_models import ChatOpenAI
+
 
 def get_chatmodel_response(question):
     # Retry logic
