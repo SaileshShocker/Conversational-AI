@@ -45,15 +45,15 @@ if 'flowmessages' not in st.session_state:
     ]
 
 # Streamlit UI
-input_question = st.text_input("Input: ", key="input")
-submit = st.button("Ask the question")
+input_question = st.text_input("Type here.", key="input")
+submit = st.button("Submit")
 
 # If the "Ask" button is clicked
 if submit:
     response = get_chatmodel_response(input_question)
 
     if response is not None:
-        st.subheader("The Response is:")
+        # st.subheader("Here you go,")
         st.write(response)
     else:
         st.subheader("Error: Unable to get response. Please try again later.")
