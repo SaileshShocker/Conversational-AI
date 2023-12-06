@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Conversation Chatbot
 emoji: 👀
@@ -10,3 +11,7 @@ pinned: false
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+=======
+# Conversational-AI
+Sisi, an AI friend who can help you with a variety of tasks such as providing information, answering questions, setting reminders, giving recommendations, and even engaging in casual conversations. 
+>>>>>>> 8ea5199327d8999760d7feb0afd77fa440f658d8
