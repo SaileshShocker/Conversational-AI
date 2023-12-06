@@ -45,8 +45,29 @@ if 'flowmessages' not in st.session_state:
     ]
 
 # Streamlit UI
-input_question = st.text_input("Type here.", key="input")
-submit = st.button("Submit")
+with st.form(key='my_form'):
+    st.markdown(
+        """
+        <style>
+            .stTextInput {
+                border-radius: 15px;
+                padding: 12px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                box-shadow: 2px 2px 5px #888888;
+                border: 1px solid #dddddd;
+                font-size: 16px;
+                width: 100%;  /* Make the input box full width */
+                height: 100px;  /* Set the height of the input box */
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    input_question = st.text_input("Type here.", key="input")
+
+    submit = st.form_submit_button("Submit")
 
 # If the "Ask" button is clicked
 if submit:
